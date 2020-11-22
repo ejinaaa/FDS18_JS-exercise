@@ -73,7 +73,7 @@ for (let i = 1; i < 7; i++) {
   }
 }
 
-// 11번 문제
+// 11번 삼각형 출력하기 - pattern 1
 var line = 5;
 let result = '';
 for (let i = 0; i < line; i++) {
@@ -84,4 +84,70 @@ for (let i = 0; i < line; i++) {
 }
 console.log(result);
 
-// 12번 문제
+// 12번 삼각형 출력하기 - pattern 2
+let result2 = '';
+for (let i = line; i > 0; i--) {
+  for (let j = line; j > i; j--) {  // 공백 증가
+    result2 += ' ';
+  }
+  for (let j = 0; j < i; j++ ) {  // 별 감소
+    result2 += '*';
+  }
+  result2 += '\n';
+}
+console.log(result2);
+
+// 13번 삼각형 출력하기 - pattern 3
+let result3 = '';
+for (let i = line; i > 0; i--) {
+  for (let j = 0; j < i; j++) { // 별 감소
+    result3 += '*';
+  }
+  result3 += '\n';
+}
+console.log(result3);
+
+// 14번 삼각형 출력하기 - pattern 4
+let result4 = '';
+for (let i = 0; i < line; i++) {
+  for (let j = line - 1; j > i; j--) {  // 공백 감소
+    result4 += ' ';
+  }
+  for (let j = 0; j <= i; j++) {  // 별 증가
+    result4 += '*';
+  }
+  result4 += '\n';
+}
+console.log(result4);
+
+// 15번 정삼각형 출력하기
+let result5 = '';
+for (let i = 0; i < line; i++) {
+  for (let j = line - 1; j > i; j--) {  // 공백 감소
+    result5 += ' ';
+  }
+  for (let j = 0; j <= i * 2; j++) { // 별 증가
+    result5 += '*';
+  }
+  for (let j = line - 1; j > i; j--) {  // 공백 감소
+    result5 += ' ';
+  }
+  result5 += '\n';
+}
+console.log(result5);
+
+// 16번 역정삼각형 출력하기 (보류)
+// let result6 = '';
+// for (let i = line; i > 0; i--) {
+//   for (let j = line; j < i - 1; j--) {  // 공백 증가
+//     result6 += ' ';
+//   }
+//   for (let j = line ; j * 2 > 0; j - 2) {  // 별 감소
+//     result6 += '*';
+//   }
+//   for (let j = line; j < i - 1; j--) {  // 공백 증가
+//     result6 += ' ';
+//   }
+//   result6 += '\n';
+// }
+// console.log(result6);
