@@ -137,17 +137,15 @@ for (let i = 0; i < line; i++) {
 console.log(result5);
 
 // 16번 역정삼각형 출력하기 (보류)
-// let result6 = '';
-// for (let i = line; i > 0; i--) {
-//   for (let j = line; j < i - 1; j--) {  // 공백 증가
-//     result6 += ' ';
-//   }
-//   for (let j = line ; j * 2 > 0; j - 2) {  // 별 감소
-//     result6 += '*';
-//   }
-//   for (let j = line; j < i - 1; j--) {  // 공백 증가
-//     result6 += ' ';
-//   }
-//   result6 += '\n';
-// }
-// console.log(result6);
+let result6 = '';
+console.log('18번');
+for (let i = 0; i < line + 1; i++) {
+  for (let j = 0; j < i; j++) {  // 공백 감소
+    result6 += ' ';
+  }
+  for (let j = line; j > i; j--) { // 별 증가
+    result6 += '*';
+  }
+  result6 += '\n';
+}
+console.log(result6);
