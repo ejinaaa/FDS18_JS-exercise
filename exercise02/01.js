@@ -1,4 +1,4 @@
-// binary search
+// 1.2 binary search
 
 function binarySearch(array, target) {
   var start = 0;
