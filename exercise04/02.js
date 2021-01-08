@@ -18,14 +18,13 @@ function getCount8 () {
   for (let i = 0; i < 10000; i++) {
     let num = i;
     
-    while (!(num === 0)) {
+    while (num !== 0) {
       if (num % 10 === 8) {
         count++;
-        num = Math.floor(num / 10);
       } else {
         count;
-        num = Math.floor(num / 10);
       }
+      num = Math.floor(num / 10);
     }
   }
 
