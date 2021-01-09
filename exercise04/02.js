@@ -19,11 +19,7 @@ function getCount8 () {
     let num = i;
     
     while (num !== 0) {
-      if (num % 10 === 8) {
-        count++;
-      } else {
-        count;
-      }
+      num % 10 === 8 ? count++ : count;
       num = Math.floor(num / 10);
     }
   }
