@@ -4,6 +4,12 @@
 function hideNumbers(str) {
   const strArr = str.split('');
   return [...Array.from({ length: strArr.length - 4 }).fill('*'), ...strArr.slice(-4)].join('');
+  
+  // let secretNum = '';
+  // for (let i = 0; i < str.length - 4; i++) {
+  //   secretNum += '*';
+  // }
+  // return secretNum + str.slice(-4);
 }
 
 console.log(hideNumbers('01033334444')); // *******4444
