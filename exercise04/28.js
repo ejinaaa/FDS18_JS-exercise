@@ -3,7 +3,10 @@
 
 function getDayName(a, b){
   const dayArr = ['SUN', 'MON', 'TUE', 'WED', 'THU', 'FRI', 'SAT'];
-  return dayArr.filter((day, i) => new Date(`2016/${a}/${b}`).getDay() === i).join('');
+  return dayArr[new Date(`2016/${a}/${b}`).getDay()];
+
+  // const dayArr = ['SUN', 'MON', 'TUE', 'WED', 'THU', 'FRI', 'SAT'];
+  // return dayArr.filter((day, i) => new Date(`2016/${a}/${b}`).getDay() === i).join('');
 
   // let day = ''; 
   // switch (new Date(`2016/${a}/${b}`).getDay()) {
