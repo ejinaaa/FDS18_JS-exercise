@@ -3,11 +3,10 @@
 
 function numberOfPrime(n) {
   let arr = Array.from({ length: n - 2 }, ((_, i) => i + 2));
-  console.log(arr)
   for (let i = 2; i < n; i++) {
     for (let j = 2; j < i; j++) {
-      if ((i % j) === 0) {
-        arr.splice(arr.indexOf(i), 1)
+      if (!(i % j)) {
+        arr.splice(arr.indexOf(i), 1);
         break;
       };
     }
