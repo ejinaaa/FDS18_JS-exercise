@@ -11,7 +11,7 @@ function getCurrentWeek() {
 
   let thisWeek = [];
   
-  for (let i = 0; i < oneWeek; i++) {
+  for (let i = 1; i <= oneWeek; i++) {
     thisWeek.push(new Date(year, month, date - day + i).toISOString().slice(0, 10))
   }
   return thisWeek;
